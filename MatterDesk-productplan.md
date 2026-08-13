@@ -1,6 +1,6 @@
 # MatterDesk — Product- & Architectuurplan
 
-> Werktitel: **MatterDesk** (alternatief: **Matterly**) — geleverd en gefactureerd door **WestAI**.
+> Naam: **MatterDesk** (definitief — domein, KVK en BOIP-merkregister vrij bevonden) — geleverd en gefactureerd door **WestAI**.
 > Status: levend document. Laatst bijgewerkt: 2026-08-13.
 
 Een AI-native "matter center" voor de advocatuur, volledig geïntegreerd in Outlook, Word en Excel.
@@ -127,11 +127,11 @@ worden op de aankoopprijs gehonoreerd.
 
 ---
 
-## 7. Naam & merk — te verifiëren
+## 7. Naam & merk — GEKOZEN: MatterDesk
 
-- **MatterDesk** — sterk, maar ⚠️ fonetische nabijheid tot bestaande legal-vendor **Maatdesk** → merkverwarringsrisico.
-- Verifieer vóór vastleggen: `matterdesk.nl` (SIDN/registrar) · BOIP-merkcheck (incl. nabijheid Maatdesk) · KVK-handelsnaam.
-- **Matterly** — door gebruiker als vrij gezien; veilige tweede keuze (geen branche-collision).
+- **MatterDesk** — gekozen. Checks uitgevoerd en vrij bevonden: `matterdesk.nl` (registrar), KVK-handelsnaam, BOIP-merkregister.
+- **Actiepunt:** MatterDesk zelf **deponeren als merk** bij BOIP in klasse 9 (software) + 42 (SaaS/ontwikkeling) om de naam te borgen (i.v.m. nabijheid tot legal-vendor Maatdesk).
+- Backup indien ooit nodig: **Matterly** (ook vrij bevonden).
 - Vermijd "Matter Center" als merk (= Microsofts eigen dode product).
 
 ---
