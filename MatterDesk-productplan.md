@@ -36,6 +36,11 @@ WestAI levert **geen** Azure/M365-licenties — dat loopt via partners. De add-i
 - **Outlook e-mail filing.** Bij verzenden (`OnMessageSend`) een venster met een **voorstel** van recente/relevante dossiers
   (afzender/ontvanger, laatst gebruikt, onderwerp-match).
 - **Uren schrijven** per dossier — tenant-native opgeslagen; voedt later de boekhoudkoppeling.
+- **Storage-inzicht.** In het matter center ziet de klant real-time hoeveel SharePoint-opslag in gebruik is
+  t.o.v. de inbegrepen tenant-quota (1 TB + 10 GB per gebruiker), uitgelezen via Graph. Let op: met SharePoint
+  Embedded pay-as-you-go is er **geen harde muur** — overschrijding wordt kosten ($0,20/GB/mnd op de Azure van
+  de klant). De waarschuwing toont dus twee dingen: (1) hoeveel van de inbegrepen ruimte op is, en (2) dat
+  overschrijding geld kost. Bij naderende grens **opvallend zichtbaar** in het matter center.
 - **Event-/outbox-laag** vanaf dag 1 (bv. "dossier aangemaakt", "uren geschreven"): nu inert, later adapters
   richting NL-boekhoudpakketten (Twinfield, Exact, AFAS). Alleen dun abstraheren, niet hardcoden.
 
@@ -66,6 +71,10 @@ WestAI levert **geen** Azure/M365-licenties — dat loopt via partners. De add-i
 
 ## 4. Prijsmodel
 
+**Merkbelofte:** *Maandelijks opzegbaar. Geen langlopende contracten. En als je stopt, houd je alles —
+je dossiers staan in je eigen SharePoint, niet bij ons.* Dit is een kernonderscheid t.o.v. NetDocuments/Epona
+(jaarcontracten + implementatie-lock-in) en tegelijk gewoon waar, want de data staat tenant-native.
+
 Alle prijzen **config-gestuurd en op elk moment aanpasbaar** (prijstabel met ingangsdatum).
 Prijswijzigingsclausule in de algemene voorwaarden (B2B, ±30 dagen aankondiging). Reeds gekochte AI-bundels
 worden op de aankoopprijs gehonoreerd.
@@ -73,7 +82,7 @@ worden op de aankoopprijs gehonoreerd.
 | Component | Managed AI | Eigen Foundry |
 |---|---|---|
 | **Eenmalige setup** | €295 | €950 (Bicep-uitrol, Azure-inrichting, budget-guards) |
-| **Moduletarief** (per kantoor/maand) | €39 | €39 |
+| **Moduletarief** (per kantoor/maand) | €50 | €50 |
 | **Per gebruiker/maand** | **€45** | **€45** |
 | **AI** | Bundel inbegrepen per seat + bijkoop credit-packs | Klant betaalt Azure zelf; optioneel €5/seat AI-beheer |
 
